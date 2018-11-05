@@ -1,47 +1,81 @@
+  /*------------ CODE FOR RESPONSIVE WEBSITE --------------*/
+
+
+/*  TABLE OF CONTENTS
+
+1. Media for Mobile MAX-DEVICE-WIDTH 640px
+2. Media for Tablet MAX-WIDTH 767px
+3. Media for Tablet MIN-WIDTH 768px and MAX-WIDTH 991px
+4. Media for Laptop Screen and MAX-WIDTH 960px
+5. Media for Laptop MIN-WIDTH 992px AND MAX-WIDTH 1199px
+6. Media for LaptopL SCREEN AND MIN-WIDTH 1200px
+7. Media for LaptopXL SCREEN AND MIN-WIDTH 1400px
+8. Media for LaptopXL SCREEN AND MIN-WIDTH 1600px
+9. Media for LaptopXL SCREEN AND MIN-WIDTH 1900px
+
+*/
+
+
+/*------------ 1. Media for Mobile MAX-DEVICE-WIDTH 640px--------------*/
+
 @media only screen and (max-device-width: 640px) {
+  #headerS {
+    width: 104%;
+    margin-bottom: 1%;
+    display: inherit;
+  }
+  #headerL,
+  #headerXL,
+  #headerTablet,
+  #headerLaptop {
+    display: none;
+  }
 
+  #footerS {
+    width: 104%;
+    margin-bottom: 1%;
+    display: inherit;
+  }
+  #footerL,
+  #footerXL,
+  #footerTablet,
+  #footerLaptop {
+    display: none;
+  }
 
-  #mydfktitle{
+  #mydfktitle {
     font-size: 50px;
   }
-
-  #tagphoto{
-    font-size: 36px;
+  #tagphoto {
+    font-size: 22px;
   }
-
-  .add-photo{
+  .add-photo {
     font-size: 36px;
-    border-radius: 50px; 
+    border-radius: 50px;
     width: 35%;
     padding: 20px 13px;
     margin-left: 33%;
     margin-top: 2%;
-    margin-bottom: 2%;  
+    margin-bottom: 2%;
   }
-
-  .column{
+  .column {
     margin-left: 3.3%;
     margin-bottom: 4%;
   }
-
-  .column img{
+  .column img {
     width: 420px;
     height: 380px;
   }
-
-  .gallery-item{
+  .gallery-item {
     width: 400px;
     height: 352px;
   }
-
   #facebook-logo,
-  #instagram-logo{
+  #instagram-logo {
     font-size: 32px;
   }
-
   /*----------- GALLERY IMAGE DIALOG -------------*/
-
-  .modal-dialog{
+  .modal-dialog {
     position: absolute;
     overflow-x: hidden;
     overflow-y: auto;
@@ -49,13 +83,12 @@
     margin-top: 0%;
     min-height: 100%;
     max-height: 100%;
+    top: 0;
   }
-
-  .modal{
+  .modal {
     margin: 0 auto 0px auto;
   }
-
-  .close{
+  .close {
     color: #414040;
     font-size: 55px;
     /* border-bottom: 1px solid #414040; */
@@ -64,23 +97,20 @@
     float: right;
     margin-right: 2.5%;
   }
-
-  .container{
+  .container {
     margin-top: 0%;
   }
-
-  .modal-left{
+  .modal-left {
     width: 100%;
     margin-bottom: 4%;
+    margin-left: -15px;
   }
-
-  #modal-image{
-    width: 100%;
+  #modal-image {
+    width: 103%;
     min-height: 100%;
     max-height: 100%;
   }
-
-  .modal-right{
+  .modal-right {
     width: 100%;
     min-height: 100%;
     overflow: scroll;
@@ -90,369 +120,154 @@
     margin-top: 0%;
     max-height: 100%;
   }
-
-  #product-number{
+  #product-number {
     margin-top: 1.3%;
   }
-
-  #rounded-number{
+  #rounded-number {
     padding: 7px 20px 7px 20px;
     font-size: 35px;
   }
-
-  .modal-title{
+  .modal-title {
     font-size: 30px;
   }
-
-  #description{
+  #description {
     font-size: 26px;
   }
-
-  #product-image{
+  #product-image {
     margin-top: 0%;
     margin-left: 19px;
     width: 24%;
   }
-
-  #product-details{
+  #product-details {
     width: 60%;
   }
-
-  #image-size{
+  #image-size {
     width: 45%;
     height: 45%;
   }
-
-  .products{
+  .products {
     padding: 10px;
   }
-
-  /*----------- ADD MY PHOTO MODAL --------------*/
-
-  #dialogbox{
-    position: absolute;
-    background: #ffffff;
-    left: -1.2%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    top: -1.7%;
-    width: 102.2%;
-    min-height: 104%;
-    max-height: 104%;
+  /*------------ GALLERY CAROUSEL --------------*/
+  .gallery-carousel {
+    width: 102%;
+    margin-top: -1%;
   }
-
-  .header{
-    width: 100%;
-    height: 6%;
-    top: 0;
-    padding-bottom: 11%;
-    margin-top: 2%;
-    position: fixed;
-    border-bottom: 2px solid #ccc;
-    left: 0;
-    transform: none;
+  .carousel-control>a>span {
+    font-size: 55px !important;
+    background-color: transparent;
+    padding: 67px 10px 67px 10px;
+    margin-top: -66px;
   }
-
-  .footer{
-    width: 100%;
-    height: 7.5%;
-    padding-top: 0.2%;
-    left: 0%;
-    bottom: 0;
-    transform: none;
-    top: unset;
-    position: fixed;
+  .carousel-control.right {
+    margin-right: 6.7%;
   }
-
-  #close-popup{
-    color: #414040;
-    font-size: 55px;
-    margin-bottom: 2%;
-    margin-top: 0.95%;
-    float: right;
-    margin-right: 1.5%;
+  .carousel-control.left {
+    margin-left: 0.5%;
   }
-
-  #select-camera{
-    font-size: 55px;
-    margin-top: 1.8%;
-    margin-left: 3%;
-    color: #474747;
+  .img-responsive img {
+    max-width: 290px;
+    max-height: 295px;
   }
-
-  #select-media{
-    font-weight: 500;
-    font-size: 45px;
-    margin-left: 21.5%;
-    margin-top: 1.5%;
-  }
-
-  .content-centre{
-    width: 100%;
-    margin-top: 13%;
-  }
-
-  #content-leftside{
-    width: 100%;
-    margin-left: 0px;
-  }
-
-  .tab button{
-    padding: 30px 10px 30px 10px;
-    font-size: 34px;
-  }
-
-  .tabcontent{
-    padding: 20px 25px 20px 25px;
-  }
-
-  #drop-area{
-    padding: 12% 10px 24% 10px;
-  }
-
-  #content-rightside{
-    width: 100%;
-  }
-
-  #right-topbar{
-    padding: 50px 10px 60px 10px;
-    font-size: 36px;
-  }
-
-  #selectedMedText{
-    font-size: 36px;
-    margin-top: -1.8%;
-  }
-
-  #drag-text,
-  #fileElem,
-  #fileElem2,
-  .button{
-    display: none;
-  }
-
-  #text-button-upload,
-  .mobile-upload-version{
-    display: inherit;
-  }
-
-  #upload-button{
-    font-size: 140px;
-    color: #acacac;
-  }
-
-  .upload-files-button{
-    font-weight: 550;
-    height: 95px;
-    display: inherit;
-    width: 35%;
-    font-size: 32px;
-    float: left;
-    padding: 22px;
-    padding-left: 33px;
-    padding-right: 33px;
-    margin-top: 2%;
-    margin-left: 33%;
-    background: transparent;
-    color: #00a100;
-    cursor: pointer;
-    border-radius: 50px;
-    border: 4px solid #00a100;
-  }
-
-  #cancel-button{
-    padding: 13px;
-    padding-left: 33px;
-    padding-right: 33px;
-    font-size: 36px;
-    font-weight: 500;
-    margin-right: 2%;
-    margin-top: 1.8%;
-    border: 4px solid #fff;
-    border-radius: 48.5px;
-  }
-
-  #next{
-    padding: 13px;
-    padding-left: 33px;
-    padding-right: 33px;
-    margin-top: 1.8%;
-    margin-right: 3%;
-    font-size: 36px;
-    font-weight: 500;
-    border: 4px solid #00a100;
-    border-radius: 48.5px;
-  }
-
-  #prev{
-    padding: 13px;
-    padding-left: 33px;
-    padding-right: 33px;
-    margin-top: 1.8%;
-    margin-right: 3%;
-    font-size: 36px;
-    font-weight: 500;
-    border: 4px solid #00a100;
-    border-radius: 48.5px;
-  }
-
-  #close{
-        padding: 13px;
-    padding-left: 33px;
-    padding-right: 33px;
-    margin-top: 1.8%;
-    margin-right: 3%;
-    font-size: 36px;
-    font-weight: 500;
-    border: 4px solid #00a100;
-    border-radius: 48.5px;
-  }
-
-  #gallery img{
-    width: 145px;
-    height: 140px;
-    margin-left: 2.5%;
-  }
-
-  .box textarea{
-    width: 66%;
-    height: 140px;
-    font-size: 30px;
-    margin-left: 3%;
-    border: 3px solid #bbb;
-    background-color: #fff;
-  }
-
-  #remove-button{
-    padding: 2px 14px 2px 14px;
-    font-size: 43px;
-    margin-top: 4%;
-    margin-right: 3%;
-  }
-
-  #gallery{
-    overflow: auto;
-    height: 85vh;
-  }
-
-  /*------------- SECTION 2---------------*/
-
-  #image-box img{
-    width: 28%;
-    height: 262px;
-    margin-left: 4.5%;
-    margin-top: 6%;
-    position: unset;
-  }
-
-  #remove-image{
-    font-size: 45px;
-    padding: 0px 8px 0px 8px;
-    margin-top: 4%;
-    margin-left: -30%;
-    position: unset;
-  }
-
-  #caption-box{
-    width: 63%;
-    margin-top: 3.8%;
-  }
-
-  #caption-text{
-    font-size: 36px;
-  }
-
-  #caption-textarea{
-    width: 97%;
+  .img-responsive {
     height: 210px;
-    border:3px solid #ccc;
-    font-size: 32px;
-    margin-top: 2%;
+    width: 250px;
+  }
+  .col-md-10 {
+    width: 95%;
+  }
+}
+/*------------ END OF 1. Media for Mobile MAX-DEVICE-WIDTH 640px--------------*/
+
+
+/*------------ 2. Media for Tablet MAX-WIDTH 767px--------------*/
+@media (max-width: 767px) {
+  .carousel-inner .active.left {
+    left: -50%;
+  }
+  .carousel-inner .active.right {
+    left: 50%;
+  }
+  .carousel-inner .next {
+    left: 50%;
+  }
+  .carousel-inner .prev {
+    left: -50%;
+  }
+  .carousel-col {
+    width: 50%;
+  }
+  .active>div:first-child+div {
+    display: block;
+  }
+  .active>div:first-child+div+div {
+    display: block;
+  }
+}
+/*------------END OF 2. Media for Tablet MAX-WIDTH 767px--------------*/
+
+
+/*------------ 3. Media for Tablet MIN-WIDTH 768px and MAX-WIDTH 991px --------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner .active.left {
+    left: -25%;
+  }
+  .carousel-inner .active.right {
+    left: 25%;
+  }
+  .carousel-inner .next {
+    left: 25%;
+  }
+  .carousel-inner .prev {
+    left: -25%;
+  }
+  .carousel-col {
+    width: 25%;
+  }
+  .active>div:first-child+div {
+    display: block;
+  }
+  .active>div:first-child+div+div {
+    display: block;
+  }
+  .active>div:first-child+div+div+div {
+    display: block;
+  }
+  .carousel-control.left,
+  .carousel-control.right {
+    margin-top: 9.5%;
+  }
+  .gallery-carousel {
+    width: 103%;
   }
 
-  .review-image{
-    min-height: 360px;
-    max-height: 1500px;
+  #mydfktitle{
+    font-size: 32px;
+  }
+  .row {
+    margin-right: 2%;
     margin-left: 0%;
   }
-
-  .details-box{
-    width: 100%;
-    height: 100%;
-    padding-bottom: 13%;
-    margin-top: 9%;
-    position: fixed;
+  .img-responsive img {
+    max-width: 290px;
+    max-height: 295px;
   }
-
-  .form-inline{
-    display: inline-grid;
-    margin-top: 4%;
-    margin-left: 4%;
-    font-size: 36px;
-    width: 93%;
+  #website-image {
+    width: 97%;
+    margin-left: 1.2%;
   }
-
-  .form-inline input{
-    padding: 45px 10px 54px 29px;
-    margin:10px 30px 20px 0;
+  .col-md-10,
+  .col-xs-11 {
+    padding-right: 0px;
+    padding-left: 27px;
   }
-
-  .form-inline input[type=checkbox]{
-    transform: scale(1.5);
+  .col-md-10 {
+    width: 95%;
   }
-
-  #terms-label{
-    margin-left: 2%;
+  .img-responsive {
+    height: 210px;
+    width: 250px;
   }
-
-  /*#submitted{
-    font-weight: 500;
-    font-size: 45px;
-    margin-left: 16.5%;
-    margin-top: -5.6%;
-  }*/
-
-  #submit-media{
-    font-weight: 500;
-    font-size: 45px;
-    margin-left: 10%;
-    margin-top: 1.5%;
-  }
-
-  #sharing-text{
-    width: 100%;
-    margin-top: 40%;
-    font-size: 36px;
-    color: #00a100;
-    position: fixed;
-    text-align: center;
-  }
-
-  #more-photos-plus{
-    font-size: 100px;
-    margin-top: 5%;
-    color: #00a100;
-    background: transparent;
-  }
-
-  #add-more-photos{
-    font-weight: 800;
-    font-size: 42px;
-    margin-top: 3%;
-  }
-
-  #approval-text{
-    font-size: 42px;
-  }
-
-
-
-
-
-
-}
-
-@media screen and (min-width: 641px) and (max-width: 960px) {
   aside {
     padding: 0 1rem 0 0;
   }
@@ -466,8 +281,43 @@
     height: 100%;
     width: 100%;
   }
-}
+  #tagphoto {
+    font-size: 25px;
+  }
+  .modal-dialog {
+    width: 80%;
+  }
+  #headerTablet {
+    width: 105%;
+    height: 100%;
+    margin-bottom: 0.5%;
+    display: inline-flex;
+  }
+  #headerS,
+  #headerL,
+  #headerLaptop,
+  #headerXL {
+    display: none;
+  }
 
+  #footerTablet {
+    width: 105%;
+    height: 100%;
+    margin-top: 0.5%;
+    display: inline-flex;
+  }
+
+  #footerS,
+  #footerL,
+  #footerLaptop,
+  #footerXL {
+    display: none;
+  }
+}
+/*------------END OF 3. Media for Tablet MIN-WIDTH 768px and MAX-WIDTH 991px --------------*/
+
+
+/*------------ 4. Media for Laptop Screen and MAX-WIDTH 960px --------------*/
 @media screen and (max-width: 960px) {
   main {
     width: 100%;
@@ -490,120 +340,285 @@
   #close-popup {
     font-size: 40px;
   }
-}
+  .modal-dialog {
+    width: 80%;
+  }
+  #headerLaptop {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.5%;
+    display: inline-flex;
+  }
+  #headerL,
+  #headerXL {
+    display: none;
+  }
 
+  #footerLaptop {
+    width: 100%;
+    height: 100%;
+    margin-top: 0.5%;
+    display: inline-flex;
+  }
+
+  #footerS,
+  #footerL,
+  #footerXL {
+    display: none;
+  }
+}
+/*------------END OF 4. Media for Laptop Screen and MAX-WIDTH 960px --------------*/
+
+
+/*------------ 5. Media for Laptop MIN-WIDTH 992px AND MAX-WIDTH 1199px --------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-inner .active.left {
+    left: -20%;
+  }
+  .carousel-inner .active.right {
+    left: 20%;
+  }
+  .carousel-inner .next {
+    left: 20%;
+  }
+  .carousel-inner .prev {
+    left: -20%;
+  }
+  .carousel-col {
+    width: 20%;
+  }
+  .active>div:first-child+div {
+    display: block;
+  }
+  .active>div:first-child+div+div {
+    display: block;
+  }
+  .active>div:first-child+div+div+div {
+    display: block;
+  }
+  .active>div:first-child+div+div+div+div {
+    display: block;
+  }
+  .gallery-carousel {
+    width: 104%;
+  }
+  .carousel-control.left,
+  .carousel-control.right {
+    margin-top: 8.5%;
+  }
+  .img-responsive {
+    height: 180px;
+  }
+  .img-responsive img {
+    max-width: 250px;
+    max-height: 270px;
+  }
+  .col-md-10 {
+    width: 95%;
+  }
+  #website-image {
+    width: 101%;
+  }
+  .modal-dialog {
+    width: 80%;
+    margin-left: 9%;
+  }
+  #headerLaptop {
+    width: 106%;
+    height: 100%;
+    margin-bottom: 0.5%;
+    display: inline-flex;
+  }
+  #headerL,
+  #headerXL,
+  #headerS,
+  #headerTablet {
+    display: none;
+  }
+
+  #footerLaptop {
+    width: 106%;
+    height: 100%;
+    margin-top: 0.5%;
+    display: inline-flex;
+  }
+
+  #footerXL,
+  #footerL,
+  #footerTablet,
+  #footerS {
+    display: none;
+  }
+}
+/*------------END OF 5. Media for Laptop MIN-WIDTH 992px AND MAX-WIDTH 1199px --------------*/
+
+
+/*------------ 6. Media for LaptopL SCREEN AND MIN-WIDTH 1200px --------------*/
 @media screen and (min-width: 1200px) {
-  #dialogoverlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  #dialogbox {
-    left: 24%;
-    top: 20%;
-    width: 50%;
-    height: 405px;
-  }
   #close-popup {
     font-size: 25px;
   }
-  #popup-description {
-    font-size: 12px;
+  #headerL {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.5%;
+    display: inline-flex;
+  }
+  #headerXL {
+    display: none;
+  }
+
+  #footerL {
+    width: 100%;
+    height: 100%;
+    margin-top: 0.5%;
+    display: inline-flex;
+  }
+
+  #footerS,
+  #footerTablet,
+  #footerLaptop,
+  #footerXL {
+    display: none;
+  }
+  .carousel-inner .active.left {
+    left: -16.66%;
+  }
+  .carousel-inner .active.right {
+    left: 16.66%;
+  }
+  .carousel-inner .next {
+    left: 16.66%;
+  }
+  .carousel-inner .prev {
+    left: -16.66%;
+  }
+  .carousel-col {
+    width: 16.66%;
+  }
+  .active>div:first-child+div {
+    display: block;
+  }
+  .active>div:first-child+div+div {
+    display: block;
+  }
+  .active>div:first-child+div+div+div {
+    display: block;
+  }
+  .active>div:first-child+div+div+div+div {
+    display: block;
+  }
+  .active>div:first-child+div+div+div+div+div {
+    display: block;
   }
 }
+/*------------END OF 6. Media for LaptopL SCREEN AND MIN-WIDTH 1200px --------------*/
 
 
-/*--------------- 6. MEDIA FOR MAX-WIDTH: 1400px ----------------*/
-
+/*------------ 7. Media for LaptopXL SCREEN AND MIN-WIDTH 1400px --------------*/
 @media screen and (min-width: 1400px) {
-  #dialogoverlay {
-    height: 100%;
+  .modal-dialog {
+    min-height: 480px;
+    max-height: 480px;
+    width: 63%;
+  }
+  #modal-image {
+    max-height: 480px;
+    min-height: 480px;
+  }
+  #headerL {
     width: 100%;
-    top: 0;
-    left: 0;
-  }
-  #dialogbox {
-    left: 24%;
-    top: 23%;
-    width: 50%;
-    height: 405px;
-  }
-  #close-popup {
-    font-size: 25px;
-  }
-  #popup-description {
-    font-size: 12px;
-  }
-}
-
-
-/*--------------- 7. MEDIA FOR MAX-WIDTH: 1600px ----------------*/
-
-@media screen and (min-width: 1600px) {
-  #dialogoverlay {
     height: 100%;
+    margin-bottom: 0%;
+    display: inline-flex;
+  }
+  #headerXL {
+    display: none;
+  }
+
+  #footerL {
     width: 100%;
-    top: 0;
-    left: 0;
-  }
-  #dialogbox {
-    left: 25%;
-    top: 24%;
-    width: 48%;
-    height: 420px;
-  }
-  #close-popup {
-    font-size: 25px;
-  }
-  #popup-description {
-    font-size: 14px;
-  }
-  #share-text {
-    font-size: 14px;
-  }
-  #myTextarea {
-    height: 80px;
-    font-size: 14px;
-  }
-  #share-header {
-    font-size: 14px;
-  }
-}
-
-
-/*---------------- 8. MEDIA FOR MAX-WIDTH: 1900px --------------- */
-
-@media screen and (min-width: 1900px) {
-  #dialogoverlay {
     height: 100%;
+    margin-top: 0.5%;
+    display: inline-flex;
+  }
+
+  #footerXL {
+    display: none;
+  }
+/*------------END OF 7. Media for LaptopXL SCREEN AND MIN-WIDTH 1400px --------------*/
+
+/*------------ 8. Media for LaptopXL SCREEN AND MIN-WIDTH 1600px --------------*/
+  @media screen and (min-width: 1600px) {
+    #share-text {
+      font-size: 14px;
+    }
+    #myTextarea {
+      height: 80px;
+      font-size: 14px;
+    }
+    #share-header {
+      font-size: 14px;
+    }
+    .modal-dialog {
+      width: 52%;
+    }
+    #footerXL {
     width: 100%;
-    top: 0;
-    left: 0;
+    height: 100%;
+    margin-top: 0.5%;
+    display: inline-flex;
+    }
+
+    #footerL,
+    #footerLaptop{
+      display: none;
+    }
   }
-  #dialogbox {
-    left: 31%;
-    top: 28%;
-    width: 37%;
-    height: 450px;
+/*------------END OF 8. Media for LaptopXL SCREEN AND MIN-WIDTH 1600px --------------*/
+
+/*------------ 9. Media for LaptopXL SCREEN AND MIN-WIDTH 1900px --------------*/
+  @media screen and (min-width: 1900px) {
+    .box-text {
+      height: 290px;
+    }
+    #share-text {
+      font-size: 16px;
+    }
+    #myTextarea {
+      height: 88px;
+      font-size: 16px;
+    }
+    #share-header {
+      font-size: 16px;
+    }
+    .modal-dialog {
+      width: 47%;
+      margin-left: 27%;
+    }
+    #headerXL {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0.5%;
+      display: inline-flex;
+    }
+    #headerL {
+      display: none;
+    }
+    main {
+    margin-left: 22.5%;
+    }
+
+    #footerXL {
+    width: 100%;
+    height: 100%;
+    margin-top: 0.5%;
+    display: inline-flex;
+    }
+
+    #footerL,
+    #footerLaptop {
+      display: none;
+    }
   }
-  #close-popup {
-    font-size: 25px;
-  }
-  #popup-description {
-    font-size: 16px;
-  }
-  .box-text {
-    height: 290px;
-  }
-  #share-text {
-    font-size: 16px;
-  }
-  #myTextarea {
-    height: 88px;
-    font-size: 16px;
-  }
-  #share-header {
-    font-size: 16px;
-  }
-}
+  /*------------END OF 9. Media for LaptopXL SCREEN AND MIN-WIDTH 1900px --------------*/
