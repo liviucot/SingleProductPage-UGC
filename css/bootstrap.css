@@ -1,4 +1,9 @@
-/*----------------- BOOTSTRAP CODE ------------------*/
+/*----------------- 
+
+BOOTSTRAP CODE --- TOOK IT FROM THE BOOTSTRAP.CSS 
+and selected the code that I need so it doesn't mix with other stuff
+
+------------------*/
 
 .img-responsive,
 .thumbnail>img,
@@ -9,13 +14,6 @@
   width: 100% \9;
   max-width: 100%;
   height: auto
-}
-
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto
 }
 
 @media (min-width:768px) {

@@ -30,7 +30,6 @@
   #headerLaptop {
     display: none;
   }
-
   #footerS {
     width: 104%;
     margin-bottom: 1%;
@@ -42,7 +41,6 @@
   #footerLaptop {
     display: none;
   }
-
   #mydfktitle {
     font-size: 50px;
   }
@@ -146,7 +144,8 @@
     height: 45%;
   }
   .products {
-    padding: 10px;
+    padding: 0px;
+    /*change*/
   }
   /*------------ GALLERY CAROUSEL --------------*/
   .gallery-carousel {
@@ -177,10 +176,13 @@
     width: 95%;
   }
 }
+
+
 /*------------ END OF 1. Media for Mobile MAX-DEVICE-WIDTH 640px--------------*/
 
 
 /*------------ 2. Media for Tablet MAX-WIDTH 767px--------------*/
+
 @media (max-width: 767px) {
   .carousel-inner .active.left {
     left: -50%;
@@ -204,10 +206,13 @@
     display: block;
   }
 }
+
+
 /*------------END OF 2. Media for Tablet MAX-WIDTH 767px--------------*/
 
 
 /*------------ 3. Media for Tablet MIN-WIDTH 768px and MAX-WIDTH 991px --------------*/
+
 @media (min-width: 768px) and (max-width: 991px) {
   .carousel-inner .active.left {
     left: -25%;
@@ -240,12 +245,11 @@
   .gallery-carousel {
     width: 103%;
   }
-
-  #mydfktitle{
+  #mydfktitle {
     font-size: 32px;
   }
   .row {
-    margin-right: 2%;
+    margin-right: 3.3%;
     margin-left: 0%;
   }
   .img-responsive img {
@@ -285,7 +289,7 @@
     font-size: 25px;
   }
   .modal-dialog {
-    width: 80%;
+    width: 100%;
   }
   #headerTablet {
     width: 105%;
@@ -299,14 +303,12 @@
   #headerXL {
     display: none;
   }
-
   #footerTablet {
     width: 105%;
     height: 100%;
     margin-top: 0.5%;
     display: inline-flex;
   }
-
   #footerS,
   #footerL,
   #footerLaptop,
@@ -314,10 +316,13 @@
     display: none;
   }
 }
+
+
 /*------------END OF 3. Media for Tablet MIN-WIDTH 768px and MAX-WIDTH 991px --------------*/
 
 
 /*------------ 4. Media for Laptop Screen and MAX-WIDTH 960px --------------*/
+
 @media screen and (max-width: 960px) {
   main {
     width: 100%;
@@ -353,24 +358,40 @@
   #headerXL {
     display: none;
   }
-
   #footerLaptop {
     width: 100%;
     height: 100%;
     margin-top: 0.5%;
     display: inline-flex;
   }
-
   #footerS,
   #footerL,
   #footerXL {
     display: none;
   }
 }
+
+
 /*------------END OF 4. Media for Laptop Screen and MAX-WIDTH 960px --------------*/
+
+@media (max-width: 980px) and (min-device-width:768px) {
+  .modal-dialog {
+    width: 84%;
+    margin-left: 7.5%;
+    top: calc(50% - 283px);
+  }
+  .col-md-10 {
+    width: 100%;
+  }
+  .img-responsive img {
+    max-width: 290px;
+    max-height: 320px;
+  }
+}
 
 
 /*------------ 5. Media for Laptop MIN-WIDTH 992px AND MAX-WIDTH 1199px --------------*/
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .carousel-inner .active.left {
     left: -20%;
@@ -402,9 +423,13 @@
   .gallery-carousel {
     width: 104%;
   }
-  .carousel-control.left,
+  .carousel-control.left {
+    margin-top: 8.5%;
+    margin-left: 3%;
+  }
   .carousel-control.right {
     margin-top: 8.5%;
+    margin-right: 2%;
   }
   .img-responsive {
     height: 180px;
@@ -420,11 +445,21 @@
     width: 101%;
   }
   .modal-dialog {
-    width: 80%;
-    margin-left: 9%;
+    width: 70%;
+    margin-left: 13%;
+    top: calc(50% - 255px);
+    min-height: 400px;
+    max-height: 400px;
+  }
+  #modal-image {
+    max-height: 400px;
+    min-height: 400px;
+  }
+  .carousel-inner {
+    margin-left: 2.6%;
   }
   #headerLaptop {
-    width: 106%;
+    width: 107.8%;
     height: 100%;
     margin-bottom: 0.5%;
     display: inline-flex;
@@ -435,14 +470,12 @@
   #headerTablet {
     display: none;
   }
-
   #footerLaptop {
-    width: 106%;
+    width: 107.8%;
     height: 100%;
     margin-top: 0.5%;
     display: inline-flex;
   }
-
   #footerXL,
   #footerL,
   #footerTablet,
@@ -450,10 +483,13 @@
     display: none;
   }
 }
+
+
 /*------------END OF 5. Media for Laptop MIN-WIDTH 992px AND MAX-WIDTH 1199px --------------*/
 
 
 /*------------ 6. Media for LaptopL SCREEN AND MIN-WIDTH 1200px --------------*/
+
 @media screen and (min-width: 1200px) {
   #close-popup {
     font-size: 25px;
@@ -467,14 +503,12 @@
   #headerXL {
     display: none;
   }
-
   #footerL {
     width: 100%;
     height: 100%;
     margin-top: 0.5%;
     display: inline-flex;
   }
-
   #footerS,
   #footerTablet,
   #footerLaptop,
@@ -512,15 +546,19 @@
     display: block;
   }
 }
+
+
 /*------------END OF 6. Media for LaptopL SCREEN AND MIN-WIDTH 1200px --------------*/
 
 
 /*------------ 7. Media for LaptopXL SCREEN AND MIN-WIDTH 1400px --------------*/
+
 @media screen and (min-width: 1400px) {
   .modal-dialog {
     min-height: 480px;
     max-height: 480px;
-    width: 63%;
+    width: 60.5%;
+    margin-left: 19%;
   }
   #modal-image {
     max-height: 480px;
@@ -535,20 +573,17 @@
   #headerXL {
     display: none;
   }
-
   #footerL {
     width: 100%;
     height: 100%;
-    margin-top: 0.5%;
+    margin-top: 0.7%;
     display: inline-flex;
   }
-
   #footerXL {
     display: none;
   }
-/*------------END OF 7. Media for LaptopXL SCREEN AND MIN-WIDTH 1400px --------------*/
-
-/*------------ 8. Media for LaptopXL SCREEN AND MIN-WIDTH 1600px --------------*/
+  /*------------END OF 7. Media for LaptopXL SCREEN AND MIN-WIDTH 1400px --------------*/
+  /*------------ 8. Media for LaptopXL SCREEN AND MIN-WIDTH 1600px --------------*/
   @media screen and (min-width: 1600px) {
     #share-text {
       font-size: 14px;
@@ -564,20 +599,18 @@
       width: 52%;
     }
     #footerXL {
-    width: 100%;
-    height: 100%;
-    margin-top: 0.5%;
-    display: inline-flex;
+      width: 100%;
+      height: 100%;
+      margin-top: 0.5%;
+      display: inline-flex;
     }
-
     #footerL,
-    #footerLaptop{
+    #footerLaptop {
       display: none;
     }
   }
-/*------------END OF 8. Media for LaptopXL SCREEN AND MIN-WIDTH 1600px --------------*/
-
-/*------------ 9. Media for LaptopXL SCREEN AND MIN-WIDTH 1900px --------------*/
+  /*------------END OF 8. Media for LaptopXL SCREEN AND MIN-WIDTH 1600px --------------*/
+  /*------------ 9. Media for LaptopXL SCREEN AND MIN-WIDTH 1900px --------------*/
   @media screen and (min-width: 1900px) {
     .box-text {
       height: 290px;
@@ -606,16 +639,14 @@
       display: none;
     }
     main {
-    margin-left: 22.5%;
+      margin-left: 22.5%;
     }
-
     #footerXL {
-    width: 100%;
-    height: 100%;
-    margin-top: 0.5%;
-    display: inline-flex;
+      width: 100%;
+      height: 100%;
+      margin-top: 0.5%;
+      display: inline-flex;
     }
-
     #footerL,
     #footerLaptop {
       display: none;
